@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <ion-item *ngFor="let campo of campos">
+    <ion-label position="floating">{{ campo.label }}</ion-label>
+    <ion-input [type]="campo.type" [formControlName]="campo.name"></ion-input>
+  </ion-item>
+</form>
