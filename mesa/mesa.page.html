@@ -1,0 +1,8 @@
+<ion-item>
+  <ion-label>Mesa</ion-label>
+  <ion-select [(ngModel)]="mesaSeleccionada" placeholder="Selecciona una mesa">
+    <ion-select-option *ngFor="let mesa of mesasDisponibles" [value]="mesa">
+      {{ mesa }}
+    </ion-select-option>
+  </ion-select>
+</ion-item>
